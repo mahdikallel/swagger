@@ -1,0 +1,26 @@
+{
+  "name": "hello-world",
+  "version": "0.0.1",
+  "private": true,
+  "description": "New Swagger API Project",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "main": "app.js",
+  "dependencies": {
+    "connect": "^3.3.5",
+    "swagger-connect": "^0.1.0"
+  },
+  "devDependencies": {
+    "crypto": "0.0.3",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "path": "^0.12.7",
+    "should": "^7.1.0",
+    "supertest": "^1.0.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "swagger project test"
+  }
+}
