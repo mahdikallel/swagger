@@ -1,6 +1,6 @@
 # Project Title
 
-One Paragraph of project description goes here
+RESTful API development in Node.js with Swagger Edit
 
 ## Getting Started
 
