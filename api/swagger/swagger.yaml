@@ -100,6 +100,31 @@ paths:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"
+    patch:
+      operationId: patch
+      description: patch a movie
+      # define the parameters
+      parameters:
+        - name: id
+          description: Movie id
+          type: string
+          in: path
+          required: true
+        - name: title
+          description: Movie properties
+          in: body
+          required: true
+          schema:
+            $ref: "#/definitions/Movie"
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/GeneralResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
     delete:
       operationId: delMovie
       description: delete a movie

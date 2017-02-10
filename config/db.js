@@ -52,6 +52,20 @@ module.exports = function() {
             }else {
                 return 0;
             }
+        },
+
+
+        patch(id, movie) {
+            var movieIndex = this.movieList.findIndex(element => {
+                    return element.id === id;
+        });
+            if(movieIndex !== -1) {
+                this.movieList[movieIndex].title = movie.title;
+                this.movieList[movieIndex].year = movie.year;
+                return 1;
+            }else {
+                return 0;
+            }
         }
     }
 };  
