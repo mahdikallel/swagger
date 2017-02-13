@@ -2,7 +2,7 @@
 // Include our "db"
 var db = require('../../config/db')();
 // Exports all the functions to perform on the db
-module.exports = {getAll, save, getOne, update, delMovie,patch};
+module.exports = {getAll, save, getOne, update, delMovie, patch};
 
 //GET /movie operationId
 function getAll(req, res, next) {
@@ -44,7 +44,7 @@ function delMovie(req, res, next) {
 
 }
 
-//PUT /movie/{id} operationId
+//Patch /movie/{id} operationId
 function patch(req, res, next) {
     var id = req.swagger.params.id.value; //req.swagger contains the path parameters
     var movie = req.body;

@@ -101,8 +101,8 @@ paths:
           schema:
             $ref: "#/definitions/ErrorResponse"
     patch:
-      operationId: patch
-      description: patch a movie
+      operationId: patchBook
+      description: patch a Book
       # define the parameters
       parameters:
         - name: id
@@ -113,7 +113,7 @@ paths:
         - name: title
           description: Movie properties
           in: body
-          required: true
+          required: false
           schema:
             $ref: "#/definitions/Movie"
       responses:
